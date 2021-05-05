@@ -57,7 +57,7 @@ class PhoneVerification
       redis.set(resend_key(phone), "true", ex: TIME_BEFORE_RESEND, nx: true)
 
       content = "Verification code: #{code}"
-      # actually send the SMS using Twillio or some other service
+      # actually send the SMS using twilio or some other service
       Messenger.call(phone: phone, message: content)
     end
 

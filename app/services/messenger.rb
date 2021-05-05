@@ -2,7 +2,7 @@ class Messenger
   class << self
     def call(phone:, message:)
       @client.messages.create(
-        from: Rails.application.credentials.twillio[:from_phone],
+        from: Rails.application.credentials.twilio[:from_phone],
         to: phone,
         body: message
       )
@@ -12,9 +12,9 @@ class Messenger
 
     def client
       @client ||= Twilio::REST::Client.new(
-        Rails.application.credentials.twillio[:api_key_sid],
-        Rails.application.credentials.twillio[:api_key_secret],
-        Rails.application.credentials.twillio[:account_sid]
+        Rails.application.credentials.twilio[:api_key_sid],
+        Rails.application.credentials.twilio[:api_key_secret],
+        Rails.application.credentials.twilio[:account_sid]
       )
     end
   end
