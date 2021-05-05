@@ -1,24 +1,7 @@
-# README
+# Rails Phone Authentication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example of how a phone sign-in / sign-up could work.
 
-Things you may want to cover:
+The core of the logic is located at `PhoneVerification` class.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# License: MIT
