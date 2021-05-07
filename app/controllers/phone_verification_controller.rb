@@ -39,6 +39,7 @@ class PhoneVerificationController < ApplicationController
 
     user = User.find_or_create_by(phone: phone) do |u|
       u.name = params[:name]
+      u.email = params[:email]
     end
 
     render json: {
