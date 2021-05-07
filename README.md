@@ -1,5 +1,7 @@
 # Rails Phone Authentication
 
+## You can read the full explanation [in this article](https://www.dmitry-ishkov.com/2021/05/phone-authentication-in-ruby.html)
+
 This is an example of how a phone sign-in / sign-up could work.
 
 The core of the logic is located at `PhoneVerification` class.
